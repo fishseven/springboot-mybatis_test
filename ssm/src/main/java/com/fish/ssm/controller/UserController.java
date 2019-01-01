@@ -14,12 +14,16 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/list")
+    @RequestMapping("/listById")
     @ResponseBody
     public List<User> findUser(Integer Id){
         return userService.findUser(Id);
     }
 
-
+    @RequestMapping("/list")
+    @ResponseBody
+    public List<User> userList(){
+        return userService.userList();
+    }
 
 }

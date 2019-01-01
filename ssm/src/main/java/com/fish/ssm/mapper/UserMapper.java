@@ -11,4 +11,6 @@ public interface UserMapper {
     List<User> findUser(Integer Id);
 
 
+    List<User> userList();
+
 }

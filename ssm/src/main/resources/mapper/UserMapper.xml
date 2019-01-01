@@ -14,5 +14,7 @@
       SELECT * FROM user where Id=#{Id}
    </select>
 
-
+    <select id="userList" resultMap="result">
+      SELECT * FROM user
+   </select>
 </mapper>

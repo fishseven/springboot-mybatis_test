@@ -21,4 +21,9 @@ public class UserService implements UserMapper{
     }
 
 
+    public List<User> userList() {
+        return userMapper.userList();
+    }
+
+
 }
