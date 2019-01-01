@@ -25,5 +25,8 @@ public class UserService implements UserMapper{
         return userMapper.userList();
     }
 
+    public void delete(Integer id){
+         userMapper.delete(id);
+    }
 
 }

@@ -17,4 +17,8 @@
     <select id="userList" resultMap="result">
       SELECT * FROM user
    </select>
+
+    <delete id="delete" >
+        delete from user where id = #{id};
+    </delete>
 </mapper>

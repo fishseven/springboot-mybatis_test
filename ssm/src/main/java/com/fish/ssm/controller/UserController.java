@@ -26,4 +26,9 @@ public class UserController {
         return userService.userList();
     }
 
+
+    @RequestMapping("/delete")
+    public void delete(Integer id){
+         userService.delete(id);
+    }
 }
